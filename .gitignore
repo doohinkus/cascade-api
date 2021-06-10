@@ -1,4 +1,5 @@
 node_modules
+mongo
 mongo/*
 mongo/db
 mongo.docker
