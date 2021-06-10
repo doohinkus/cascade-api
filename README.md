@@ -68,3 +68,30 @@ Console should show updates. Stop the server. Then run the following command:
 ```
 npm run start
 ```
+
+## Graphql queries
+
+http://localhost:4000/graphql
+
+Retrieve days the heat was on.
+
+```
+query{
+    HeaterTriggeredDates{
+        Date
+    }
+}
+```
+
+You can also change the responses. For example, the folowing will add the hasTriggeredAC:
+
+```
+query{
+    HeaterTriggeredDates{
+        Date
+        hasTriggeredAC
+    }
+}
+```
+
+you can also click on the tabs to find other options.
