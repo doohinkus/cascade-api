@@ -47,7 +47,7 @@ async function addCsvToMongo() {
         console.log("Error adding entries.");
         throw new Error("Failed to add entries", err);
       }
-      process.exit();
+      // process.exit();
     });
 }
 
